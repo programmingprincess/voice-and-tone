@@ -1,0 +1,188 @@
+/*
+Theme Name: Voice And Tone
+Theme URI: Your theme's URL
+Description: A theme for Lucid's Client Guide
+Version: 1.0
+Author: Jiaqi Wu
+Author URI: Your web address
+*/
+
+//colors
+$lucid-grey: #a0acac;
+
+
+
+body {
+  background-color: $lucid-grey;
+}
+.topbar {
+    margin: 125px 0 25px 0;
+    background-color: #000;
+    color: #fff;
+    height: 50px;
+}
+.topbar h3 {
+    padding: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.arrows {
+    display: inline-block;
+    float: right;
+    margin-right: 40px;
+    font-weight: 800;
+}
+
+.content {
+    padding: 20px 0 70px 275px;
+    background-color: $lucid-grey;
+    float: left;
+}
+
+@media(max-width: 993px) {
+  .content {
+    width: 98%;
+  }
+}
+.sidebar-wrapper {
+    z-index: 50;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    overflow-y: auto;
+    background: #000;
+}
+
+.sidebar-nav {
+	position: absolute;
+	top: 0;
+	width: 250px;
+	margin: 150px 0 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar-nav li {
+	padding: 5px 0px 5px 20px;
+}
+
+.sidebar-nav li a {
+	font-weight: 800;
+	color: white;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+}
+
+.sidebar-nav li.current-menu-item,
+.sidebar-nav li:hover {
+	background-color: $lucid-grey;
+}
+
+.logo {
+  margin-top: 20px;
+  max-width: 250px;
+  height: 100px;
+}
+
+.logo img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+
+.user-chatbox h2,
+.content-chatbox h2 {
+  padding: 20px;
+  margin: 0;
+}
+
+.user-feelings h4,
+.tips div {
+  padding: 20px 0;
+}
+
+.user-chatbox h2 {
+  background-color: #fff;
+}
+
+.user-chatbox:after {
+  content:"";
+  position:absolute;
+  bottom: -30px; /* value = - border-top-width - border-bottom-width */
+  left: 200px; /* controls horizontal position */
+  border-width: 30px 0px 0px 27px; /* vary these values to change the angle of the vertex */
+  border-style:solid;
+  border-color: #fff transparent;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
+
+.content-chatbox h2 {
+  background-color: #000;
+  color: #fff;
+}
+
+.content-chatbox:after {
+  content:"";
+  position:absolute;
+  bottom: -30px; /* value = - border-top-width - border-bottom-width */
+  left: 200px; /* controls horizontal position */
+  border-width: 30px 27px 0px 0px; /* vary these values to change the angle of the vertex */
+  border-style:solid;
+  border-color: #000 transparent;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
+
+.user-feelings p {
+  line-height: 26px;
+}
+
+.tips li {
+  padding: 5px 0;
+}
+
+.title {
+  margin: 30px 0 0 0;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.user-chatbox .title,
+.content-chatbox .title {
+  padding: 10px;
+}
+
+.user-chatbox .title {
+  background-color: #000;
+  color: #fff;
+}
+
+.content-chatbox .title {
+  background-color: #fff;
+}
+
+.user-feelings .title,
+.tips .title {
+  background-color: transparent;
+  padding: 0;
+}
+
+footer {
+  padding: 20px 0 0 275px;
+  display: inline-block;
+  width: 100%;
+}
+
+.footer {
+  padding: 10px 0 0 0;
+  margin: 0 25px 0 0;
+  border-top: 1px dotted #000;
+  text-align: left;
+  min-height: 100px;
+}
